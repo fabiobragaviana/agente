@@ -1,0 +1,216 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family= Righteous & display=swap') ;
+
+body{
+    background-image: url("..//imagens/fundo.avif");
+    font-family: 'Courier New', Courier, monospace;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    background-image:url("..//imagens/fundo.avif");
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+    box-shadow: 10px;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.video  {
+    background-color: rgba(255, 255, 255, 0);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: -30%;
+    position: relative;
+    
+}
+
+div.video>iframe{
+    position: absolute;
+    top: -840%;
+    left: 50%;
+    border-radius: 10px;
+    
+   
+}
+.slider{
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+
+}
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+
+}
+.slide img{
+    width: 800px;
+
+}
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.manual-btn{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+#radio5:checked ~ .first{
+    margin-left: -100%;
+}
+
+.navigation-auto div{
+    border: 2px solid rgb(255, 13, 0);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: rgba(255, 0, 0, 0.38);
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: rgba(255, 0, 0, 0.38);
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: rgba(255, 0, 0, 0.38);    
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: rgba(255, 0, 0, 0.38);    
+}
+#radio5:checked ~ .navigation-auto .auto-btn5{
+    background-color: rgba(255, 0, 0, 0.38);    
+}
+
+nav {
+    margin-top: 50px;   
+}
+nav > header{
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.605);   
+}
+
+nav > a {
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;   
+}
+
+nav > a:hover {
+    background-color: rgba(255, 0, 0, 0.842);
+    padding: 5px;
+    transition-duration: 1s;   
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom:10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section > p {
+    padding-bottom: 2em;
+    max-width: 50%;
+}
+
+section.normal {
+    background-image: linear-gradient(to right, white, rgba(255, 0, 0, 0.459), rgba(0, 0, 0, 0.5));
+    color: black;
+    
+}
+
+
+section.imagem {
+    background-color: rgb(97, 97, 97);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+iframe{
+    text-align: center;
+    
+}
+section.imagem > p {
+    width: 600px;
+    display: inline block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.386);
+    text-shadow: 1px 1px 0px black; 
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+section#img01 {
+    background-image: url("../imagens/chuteira-de-futebol-batendo-na-bola-com-forca_207634-4574.avif");
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url("../imagens/chuteira-de-futebol-batendo-na-bola-com-forca_207634-4574.avif");
+
+}
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
